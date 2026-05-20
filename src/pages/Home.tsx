@@ -62,21 +62,21 @@ export const Home: React.FC = () => {
       title: 'Crafted in Heaven, Made for You ✦',
       sub: 'Discover authentic Kashmiri handicrafts, pure pashmina, and premium saffron.',
       tag: 'New Collection',
-      image: 'https://images.unsplash.com/photo-1608748010899-18f300247112?q=80&w=800',
+      image: '/images/products/media__1779274547753.jpg',
       bgColor: 'from-[#FAF8F5] via-[#FFFFFF] to-[#FAF8F5]'
     },
     {
-      title: 'Rare Silk Carpets & Furnishings ✦',
-      sub: 'Hand-knotted with over 324 knots per square inch, weaving heritage into geometry.',
-      tag: 'Heritage Heirloom',
-      image: 'https://images.unsplash.com/photo-1576016770956-debb63d90029?q=80&w=800',
+      title: 'Wild Organic Dry Fruits ✦',
+      sub: 'Hand-picked Mamra almonds and sun-dried apricots from the high-altitude orchards.',
+      tag: 'Fresh Harvest',
+      image: '/images/products/media__1779274547785.jpg',
       bgColor: 'from-[#FDFCF7] via-[#FFFFFF] to-[#FDFCF7]'
     },
     {
       title: 'Grade A+ Pampore Saffron ✦',
       sub: 'Harvested under Srinagar autumn skies, carrying Safranal and deep red Crocin.',
       tag: 'Atelier Organic',
-      image: 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?q=80&w=800',
+      image: '/images/products/media__1779274547884.jpg',
       bgColor: 'from-[#FAF6F0] via-[#FFFFFF] to-[#FAF6F0]'
     }
   ];
@@ -220,7 +220,7 @@ export const Home: React.FC = () => {
           {/* Saffron crocus image on right side */}
           <div className="absolute -right-4 -bottom-6 w-28 h-28 opacity-75 group-hover:scale-105 transition-transform duration-500 pointer-events-none">
             <img
-              src="https://images.unsplash.com/photo-1599940824399-b87987ceb72a?q=80&w=200"
+              src="/images/products/media__1779274547884.jpg"
               alt="Kashmir Saffron Crocus"
               className="w-full h-full object-contain"
             />
