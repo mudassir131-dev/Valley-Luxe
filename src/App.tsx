@@ -303,7 +303,7 @@ const AppLayout: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-[#FAFAF8] dark:bg-[#0D0500] text-[#1A0A00] dark:text-ivory-cream selection:bg-saffron-gold selection:text-[#FAFAF8] flex transition-colors duration-300">
+    <div className="min-h-screen w-full max-w-[100vw] overflow-x-hidden bg-[#FAFAF8] dark:bg-[#0D0500] text-[#1A0A00] dark:text-ivory-cream selection:bg-saffron-gold selection:text-[#FAFAF8] flex transition-colors duration-300">
       <CustomCursor />
       <AudioPlayer />
       <ScrollToTop />
@@ -313,7 +313,7 @@ const AppLayout: React.FC = () => {
       <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
 
       {/* RIGHT SIDE CONTENT VIEWPORT CONTAINER */}
-      <div className="flex-grow flex flex-col min-h-screen lg:pl-64">
+      <div className="flex-grow flex flex-col min-h-screen max-w-full lg:pl-64">
         
         {/* TOP HEADER NAVBAR */}
         {!is404 && (
