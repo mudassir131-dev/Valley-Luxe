@@ -105,7 +105,7 @@ export const Home: React.FC = () => {
     <div className="flex flex-col gap-10 py-6 px-6 max-w-7xl mx-auto text-left">
       
       {/* SECTION 1 — HERO BANNER */}
-      <section className="relative w-full h-[380px] rounded-3xl overflow-hidden shadow-xs">
+      <section className="relative w-full h-[460px] sm:h-[420px] md:h-[380px] rounded-3xl overflow-hidden shadow-xs">
         
         {/* Carousel slide loop */}
         <AnimatePresence mode="wait">
@@ -138,7 +138,7 @@ export const Home: React.FC = () => {
             </div>
 
             {/* Right side product image container */}
-            <div className="relative shrink-0 w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border border-[#F0EDE8]/80 shadow-md bg-white">
+            <div className="relative shrink-0 w-44 h-44 sm:w-56 sm:h-56 md:w-80 md:h-80 rounded-2xl overflow-hidden border border-[#F0EDE8]/80 shadow-md bg-white">
               {/* Soft radial glow behind image */}
               <div className="absolute inset-0 bg-radial-glow z-0" />
               <img
