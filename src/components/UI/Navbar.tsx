@@ -47,22 +47,43 @@ export const Navbar: React.FC<NavbarProps> = ({ onMobileMenuToggle, onCartToggle
   };
 
   return (
-    <header className="sticky top-0 right-0 z-20 w-full bg-white dark:bg-[#1A0A00] border-b border-[#F0EDE8] dark:border-saffron-gold/10 px-6 py-3.5 transition-colors duration-300">
-      <div className="flex items-center justify-between gap-4">
+    <header className="sticky top-0 right-0 z-20 w-full bg-white dark:bg-[#1A0A00] border-b border-[#F0EDE8] dark:border-saffron-gold/10 px-4 sm:px-6 py-3 transition-colors duration-300">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
         
-        {/* Left: Mobile Menu Trigger & Search (Mobile/Tablet layout) */}
-        <div className="flex items-center gap-3 lg:gap-0">
-          <button 
-            onClick={onMobileMenuToggle}
-            className="lg:hidden text-[#1A0A00] dark:text-ivory-cream hover:text-saffron-gold transition-colors cursor-pointer"
-            aria-label="Open Navigation Menu"
-          >
-            <Menu size={20} />
-          </button>
+        {/* Top Row / Desktop Left */}
+        <div className="flex items-center justify-between w-full sm:w-auto gap-4">
+          <div className="flex items-center gap-3">
+            <button 
+              onClick={onMobileMenuToggle}
+              className="lg:hidden text-[#1A0A00] dark:text-ivory-cream hover:text-saffron-gold transition-colors cursor-pointer"
+              aria-label="Open Navigation Menu"
+            >
+              <Menu size={20} />
+            </button>
+            {/* Logo visible only on mobile Navbar */}
+            <span className="lg:hidden font-display font-light text-[13px] tracking-[0.2em] text-[#1A0A00] dark:text-ivory-cream uppercase select-none">
+              Valley Luxe
+            </span>
+          </div>
+
+          {/* Mobile Right Actions (Only visible on mobile) */}
+          <div className="flex items-center gap-2 sm:hidden">
+            <button
+              onClick={onCartToggle}
+              className="relative p-2 text-[#6B5E52] dark:text-ivory-cream/70 hover:text-saffron-gold transition-colors cursor-pointer"
+            >
+              <ShoppingBag size={18} />
+              {cartCount > 0 && (
+                <span className="absolute top-1 right-1 bg-saffron-gold text-white font-mono text-[9px] font-bold rounded-full w-3.5 h-3.5 flex items-center justify-center">
+                  {cartCount}
+                </span>
+              )}
+            </button>
+          </div>
         </div>
 
-        {/* Center: Search pill bar */}
-        <form onSubmit={handleSearchSubmit} className="flex-grow max-w-lg">
+        {/* Center: Search pill bar (wraps to full width on mobile) */}
+        <form onSubmit={handleSearchSubmit} className="w-full sm:flex-grow sm:max-w-md lg:max-w-lg order-last sm:order-none">
           <div className="relative flex items-center">
             <input
               type="text"
@@ -75,9 +96,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onMobileMenuToggle, onCartToggle
           </div>
         </form>
 
-        {/* Right: Actions bar */}
-        <div className="flex items-center gap-2 lg:gap-3.5">
-          
+        {/* Right: Actions bar (Desktop only) */}
+        <div className="hidden sm:flex items-center gap-2 lg:gap-3.5">
           {/* Wishlist Heart */}
           <button
             onClick={() => navigate('/wishlist')}
@@ -161,7 +181,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onMobileMenuToggle, onCartToggle
               </div>
             )}
           </div>
-
         </div>
       </div>
       

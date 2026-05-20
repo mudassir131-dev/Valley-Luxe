@@ -186,7 +186,7 @@ export const Home: React.FC = () => {
 
       {/* SECTION 2 — CATEGORY ICONS STRIP */}
       <section className="bg-white dark:bg-[#1A0A00] border border-[#F0EDE8] dark:border-saffron-gold/10 p-5 rounded-2xl">
-        <div className="grid grid-cols-3 sm:grid-cols-6 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
           {categories.map((cat) => (
             <button
               key={cat.label}
