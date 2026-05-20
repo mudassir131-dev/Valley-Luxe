@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
-import gsap from 'gsap';
 import { ArrowUp, Cookie, Package, Heart as HeartIcon, Ticket, MapPin, Settings as SettingsIcon, Check, Copy } from 'lucide-react';
 
 // Context Providers
@@ -38,44 +37,7 @@ const ScrollToTop: React.FC = () => {
   return null;
 };
 
-// Route Change Curtain Transition Controller
-const RouteTransitionCurtain: React.FC = () => {
-  const location = useLocation();
-  const curtainRef = useRef<HTMLDivElement>(null);
-  const prevPathRef = useRef<string>(location.pathname);
 
-  useEffect(() => {
-    if (prevPathRef.current === location.pathname) {
-      return;
-    }
-
-    prevPathRef.current = location.pathname;
-
-    if (curtainRef.current) {
-      const tl = gsap.timeline();
-      tl.set(curtainRef.current, { yPercent: 100 });
-      tl.to(curtainRef.current, {
-        yPercent: 0,
-        duration: 0.45,
-        ease: 'power2.inOut',
-      });
-      tl.to(curtainRef.current, {
-        yPercent: -100,
-        duration: 0.45,
-        ease: 'power2.inOut',
-        delay: 0.1,
-      });
-    }
-  }, [location.pathname]);
-
-  return (
-    <div
-      ref={curtainRef}
-      style={{ transform: 'translateY(100%)' }}
-      className="fixed inset-0 bg-[#FAFAF8] dark:bg-[#0D0500] z-[9999] pointer-events-none border-t border-saffron-gold/15 shadow-2xl"
-    />
-  );
-};
 
 // Background Soundscape Audio Manager
 const AudioPlayer: React.FC = () => {
