@@ -32,8 +32,7 @@ export const products: Product[] = [
     materials: '100% Changthangi Cashmere wool.',
     origin: 'Handcrafted in Srinagar, Kashmir',
     images: [
-      '/images/products/media__1779274547753.jpg',
-      'https://images.unsplash.com/photo-1544022613-e87ca75a784a?q=80&w=800'
+      '/images/products/media__1779274547753.jpg'
     ],
     rating: 4.9,
     reviewsCount: 128,
@@ -53,8 +52,7 @@ export const products: Product[] = [
     materials: '100% Pure Crocus Sativus Stigmas (Pampore Harvest).',
     origin: 'Pampore Saffron Fields, Kashmir',
     images: [
-      '/images/products/media__1779274547884.jpg',
-      'https://images.unsplash.com/photo-1599940824399-b87987ceb72a?q=80&w=800'
+      '/images/products/media__1779274547884.jpg'
     ],
     rating: 5.0,
     reviewsCount: 94,
@@ -74,8 +72,7 @@ export const products: Product[] = [
     materials: '100% Raw Kashmiri Mamra Almond Kernels.',
     origin: 'Pulwama Orchard Belts, Kashmir',
     images: [
-      '/images/products/media__1779274547785.jpg',
-      'https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?q=80&w=800'
+      '/images/products/media__1779274547785.jpg'
     ],
     rating: 4.8,
     reviewsCount: 165,
@@ -95,8 +92,7 @@ export const products: Product[] = [
     materials: '100% Organic Raw Walnuts.',
     origin: 'Kupwara Orchards, Kashmir',
     images: [
-      '/images/products/media__1779274547774.jpg',
-      'https://images.unsplash.com/photo-1596003903067-bf5762ad5c18?q=80&w=800'
+      '/images/products/media__1779274547774.jpg'
     ],
     rating: 4.9,
     reviewsCount: 88,
@@ -105,23 +101,22 @@ export const products: Product[] = [
     isDeal: true
   },
   {
-    id: 'silk-carpet-4x6',
-    name: 'Silk Carpet 4x6',
-    price: 65000,
-    originalPrice: 85000,
-    category: 'Carpets',
-    description: 'Hand-knotted Kashmiri mulberry silk carpet, featuring 324 knots-per-inch Persian Tree of Life layouts.',
-    story: 'Crafted on traditional looms in Srinagar over 6 months, this pure silk rug reflects a shifting array of shades depending on lighting angles.',
-    care: 'Vacuum vacuum only along the pile. Avoid moisture. Professional rug cleaning recommended.',
-    materials: '100% Mulberry Silk Pile, Cotton Warp Base.',
-    origin: 'Carpet Guild of Srinagar, Kashmir',
+    id: 'royal-dry-fruits-gift-box',
+    name: 'Royal Dry Fruits Gift Box',
+    price: 4500,
+    originalPrice: 5500,
+    category: 'Dry Fruits',
+    description: 'A luxurious wooden lacquered box containing an assortment of premium Kashmiri dry fruits packed in glass jars.',
+    story: 'The perfect festive gift representing the bounty of the valley. Hand-packed with love, this assortment features figs, raisins, walnuts, almonds, cashews, and pistachios arranged elegantly.',
+    care: 'Keep in a cool dry place. Glass jars are reusable.',
+    materials: 'Assorted Nuts, Glass Jars, Wooden Presentation Box.',
+    origin: 'Kashmir Valley',
     images: [
-      'https://images.unsplash.com/photo-1576016770956-debb63d90029?q=80&w=800',
-      'https://images.unsplash.com/photo-1600166898405-da9535204843?q=80&w=800'
+      '/images/products/media__1779276494217.jpg'
     ],
     rating: 5.0,
-    reviewsCount: 12,
-    badge: 'Collector Heritage',
+    reviewsCount: 41,
+    badge: 'Best Seller',
     inStock: true,
     isDeal: true
   },
@@ -138,52 +133,11 @@ export const products: Product[] = [
     materials: '100% Organic Sun-Dried Seedless Apricots.',
     origin: 'Kargil Orchards, Ladakh/Kashmir',
     images: [
-      '/images/products/media__1779274547762.jpg',
-      'https://images.unsplash.com/photo-1596003903067-bf5762ad5c18?q=80&w=800'
+      '/images/products/media__1779274547762.jpg'
     ],
     rating: 4.6,
     reviewsCount: 52,
     badge: '100% Organic',
-    inStock: true,
-    isRecommended: true
-  },
-  {
-    id: 'kani-shawl',
-    name: 'Kani Shawl',
-    price: 28000,
-    category: 'Pashmina',
-    description: 'Traditional Kashmiri Kani weave shawl, hand-loomed with wooden needles (Kanis) using a coded Talim design grid.',
-    story: 'This weaving requires translating a poetic script of knots called a Talim into precise weave matrices. A luxury heirloom piece representing over six months of two weavers sitting at a single loom.',
-    care: 'Dry clean only. Store flat in cedar chests or wrapped in soft organic sheets.',
-    materials: 'Grade-A Pashmina Wool, natural vegetable dyes.',
-    origin: 'Kanihama Weaving Village, Kashmir',
-    images: [
-      'https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?q=80&w=800',
-      'https://images.unsplash.com/photo-1608748010899-18f300247112?q=80&w=800'
-    ],
-    rating: 5.0,
-    reviewsCount: 19,
-    badge: 'Museum Grade',
-    inStock: true,
-    isRecommended: true
-  },
-  {
-    id: 'walnut-wood-bowl',
-    name: 'Walnut Wood Bowl',
-    price: 2800,
-    category: 'Handicrafts',
-    description: 'Single-piece hand-carved seasoning walnut wood salad bowl, detailing native Chinar leaf motifs.',
-    story: 'Seasoned for up to 5 years, this bowl is meticulously carved from heavy wild walnut trunks by multi-generational wood sculptors in Safapora.',
-    care: 'Wipe with dry cloth. Do not soak or run in a dishwasher. Buff with olive oil to restore glow.',
-    materials: 'Seasoned Wild Walnut timber, organic polish.',
-    origin: 'Safapora Woodcarvers, Kashmir',
-    images: [
-      'https://images.unsplash.com/photo-1590004953392-5aba2e72269a?q=80&w=800',
-      'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=800'
-    ],
-    rating: 4.7,
-    reviewsCount: 38,
-    badge: 'Artisanal Wood',
     inStock: true,
     isRecommended: true
   },
@@ -198,8 +152,7 @@ export const products: Product[] = [
     materials: 'Recycled Paper Pulp, Organic dyes, 24K Gold highlights, varnish.',
     origin: 'Rainawari Craft Quarter, Srinagar',
     images: [
-      'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=800',
-      'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800'
+      '/images/products/media__1779276489754.jpg'
     ],
     rating: 4.8,
     reviewsCount: 42,
@@ -218,8 +171,7 @@ export const products: Product[] = [
     materials: 'Pure Hammered Copper, interior tin plating, wooden safety handle.',
     origin: 'Zaina Kadal Copper Market, Srinagar',
     images: [
-      'https://images.unsplash.com/photo-1517256064527-09c53b2d0bc6?q=80&w=800',
-      'https://images.unsplash.com/photo-1590004953392-5aba2e72269a?q=80&w=800'
+      '/images/products/media__1779276486405.jpg'
     ],
     rating: 5.0,
     reviewsCount: 7,
@@ -238,8 +190,7 @@ export const products: Product[] = [
     materials: '100% Cotton base, 2-ply highland wool embroidery threads.',
     origin: 'Badgam Artisan Guild, Kashmir',
     images: [
-      'https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?q=80&w=800',
-      'https://images.unsplash.com/photo-1576016770956-debb63d90029?q=80&w=800'
+      '/images/products/media__1779276483223.jpg'
     ],
     rating: 4.7,
     reviewsCount: 31,
